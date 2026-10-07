@@ -1,0 +1,8 @@
+node_modules/
+.preview/
+.local/
+preview/
+design/
+avatar/versions/
+*.blend
+*.blend[0-9]*

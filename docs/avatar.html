@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Joshua Bigaud’s interactive cartoon portrait. Choose a pose, play an animation, and save your favorite view.">
+  <title>Joshua in 3D — Joshua Bigaud</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="avatar.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+  <script type="module" src="avatar.js"></script>
+</head>
+<body class="avatar-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap"><a class="brand" href="index.html"><span class="monogram" aria-hidden="true">JB</span><span class="brand-name">Joshua Bigaud</span></a><nav class="navigation" aria-label="Main navigation"><a href="index.html#about">Back to portfolio <span aria-hidden="true">↗</span></a></nav></header>
+  <main class="wrap avatar-main" id="main">
+    <div class="avatar-heading"><div><h1>Joshua, <em>in 3D.</em></h1><p>Choose a pose, find an angle, and see another side of me.</p></div><p class="avatar-description">Bring a little motion.<br>Save your favorite view.</p></div>
+    <div class="avatar-workspace">
+      <section class="stage-panel" aria-label="Interactive avatar">
+        <div id="stage" class="stage" aria-busy="true">
+          <img id="poster" class="avatar-poster" src="assets/avatar/joshua-avatar.png" alt="Full-body cartoon portrait of Joshua in professional attire.">
+          <p id="load-status" class="load-status" role="status">Loading the 3D avatar…</p>
+          <noscript><p class="no-js">Enable JavaScript to explore the avatar from every angle. You can also download the model.</p></noscript>
+        </div>
+        <div class="stage-toolbar"><p id="stage-hint">Drag to rotate · Scroll or pinch to zoom</p><div><button id="framing" type="button" disabled>Portrait view</button><button id="reset-view" type="button" disabled>Reset view <span aria-hidden="true">↺</span></button></div></div>
+      </section>
+      <aside class="avatar-controls" aria-label="Avatar pose and view controls">
+        <fieldset id="angle-options" disabled><legend>01 <span>Find your angle</span></legend><div class="choice-grid angles">
+          <button type="button" data-angle="three-quarter" aria-pressed="true">Three-quarter</button><button type="button" data-angle="front" aria-pressed="false">Front</button><button type="button" data-angle="side" aria-pressed="false">Side</button><button type="button" data-angle="back" aria-pressed="false">Back</button>
+        </div><p class="control-note">Choose a view, or drag to find your own.</p></fieldset>
+        <fieldset id="pose-options" disabled><legend>02 <span>Strike a pose</span></legend><div class="choice-grid poses">
+          <button type="button" data-clip="Rest" aria-pressed="true">Rest</button><button type="button" data-clip="Greeting" aria-pressed="false">Greeting</button><button type="button" data-clip="Present" aria-pressed="false">Present</button>
+        </div><p class="control-note">A still pose, ready to save from any angle.</p></fieldset>
+        <fieldset id="motion-options" disabled><legend>03 <span>Add some motion</span></legend><div class="choice-grid animations">
+          <button type="button" data-clip="Idle" aria-pressed="false">Idle</button><button type="button" data-clip="Wave" aria-pressed="false">Wave</button>
+        </div><div class="animation-actions"><button id="play-animation" type="button" aria-pressed="false" disabled>Play animation</button><button id="reset-pose" type="button" disabled>Reset pose</button></div><p id="motion-preference" class="control-note" hidden>Reduced motion is on. Select an animation, then press Play to start it.</p><label class="motion-toggle"><input type="checkbox" id="turntable"> Rotate slowly</label><p class="control-note">Drag to pause rotation. Pause animation to capture a moment.</p></fieldset>
+        <div class="avatar-downloads"><button id="save-png" class="primary-action" disabled type="button">Save transparent PNG <span aria-hidden="true">↓</span></button><a id="download-model" class="secondary-action" href="assets/avatar/joshua-avatar-rigged.glb" download="joshua-avatar-rigged.glb">Download rigged model <span aria-hidden="true">↓</span></a><p id="action-status" role="status" aria-live="polite"></p></div>
+      </aside>
+    </div>
+    <div class="avatar-footnote"><p>A cartoon interpretation of me.</p><a href="index.html#work">Explore my work <span aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="avatar-footer wrap"><span>Joshua Bigaud © 2026</span><a href="mailto:joshuabigaud@gmail.com">Say hello <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

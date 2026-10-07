@@ -1,0 +1,77 @@
+{
+  "name": "Joshua Bigaud - body rig",
+  "version": 1,
+  "inputBlend": "avatar/hi3d-portfolio.blend",
+  "inputBlendSha256": "d53bb81267480a108a91f1445611cfdb779c7a716ba6d10d804d5d711365cf08",
+  "staticGlbSha256": "bfca35cae1fd52455f2bae6bf05c790a27d02748722f2b90320edf0fd5a13fd3",
+  "editableCopy": "avatar/hi3d-rigged.blend",
+  "webAsset": "assets/avatar/joshua-avatar-rigged.glb",
+  "webBytes": 6866960,
+  "webSha256": "cdd6c79615219bfbc18595796421133cddcc0040941d67f3eb5820f79a6cc2ff",
+  "vertices": 60002,
+  "triangles": 119994,
+  "bones": [
+    "Root",
+    "Hips",
+    "Spine",
+    "Chest",
+    "Neck",
+    "Head",
+    "Clavicle.L",
+    "UpperArm.L",
+    "Forearm.L",
+    "Hand.L",
+    "Clavicle.R",
+    "UpperArm.R",
+    "Forearm.R",
+    "Hand.R",
+    "Thigh.L",
+    "Shin.L",
+    "Foot.L",
+    "Toe.L",
+    "Thigh.R",
+    "Shin.R",
+    "Foot.R",
+    "Toe.R"
+  ],
+  "deformBoneCount": 21,
+  "maxInfluences": 4,
+  "weighting": "Watertight voxel proxy bone heat; barycentric surface transfer; connected sleeve/torso masks; rigid head detail correction; 24 adjacency smoothing passes; four-influence normalization",
+  "clips": [
+    {
+      "name": "Rest",
+      "durationSeconds": 1.0,
+      "kind": "pose"
+    },
+    {
+      "name": "Greeting",
+      "durationSeconds": 1.0,
+      "kind": "pose"
+    },
+    {
+      "name": "Present",
+      "durationSeconds": 1.0,
+      "kind": "pose"
+    },
+    {
+      "name": "Idle",
+      "durationSeconds": 4.0,
+      "kind": "loop"
+    },
+    {
+      "name": "Wave",
+      "durationSeconds": 2.0,
+      "kind": "loop"
+    }
+  ],
+  "attachmentNodes": [
+    "Grip.L",
+    "Grip.R"
+  ],
+  "framesPerSecond": 30,
+  "limitations": [
+    "FK body rig with moderate pose range on generated triangular topology",
+    "No individual finger, facial, blink or lip-sync controls",
+    "No IK controllers or humanoid retargeting preset"
+  ]
+}

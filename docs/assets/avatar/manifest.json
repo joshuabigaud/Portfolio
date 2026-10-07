@@ -1,0 +1,45 @@
+{
+  "name": "Joshua Bigaud",
+  "version": 4,
+  "type": "textured static mesh",
+  "workflow": "User-generated concept images, multiple viewpoints, and image-to-3D generation",
+  "sourceFile": "Hi3D_Untitled_allparts_20261006_075531.glb",
+  "sourceSha256": "ebe65a7249fd0faaa706c6b3575e97990759fb14961a5b0cf7e7565ac5f15b64",
+  "sourceBytes": 145011892,
+  "sourceTriangles": 5000000,
+  "triangles": 119994,
+  "webBytes": 5551600,
+  "bones": [],
+  "poses": [],
+  "textures": true,
+  "editableCopy": "avatar/hi3d-portfolio.blend",
+  "preparation": "Exact source-position welding before reduction with per-corner UVs retained; uniformly scaled and centered; six invalid reduced faces removed; smooth shading at 30 degrees; original material maps preserved; web texture maps resized to 2048px",
+  "webTextures": [
+    {
+      "sourceSize": [
+        8192,
+        8192
+      ],
+      "webSize": [
+        2048,
+        2048
+      ],
+      "bytes": 617729
+    },
+    {
+      "sourceSize": [
+        8192,
+        8192
+      ],
+      "webSize": [
+        2048,
+        2048
+      ],
+      "bytes": 460158
+    }
+  ],
+  "sourceVertices": 2542079,
+  "exactWeldedSourceVertices": 2500002,
+  "removedInvalidFaces": 6,
+  "smoothAngleDegrees": 30
+}
